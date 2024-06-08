@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login page</title>
+    <link rel='stylesheet' href='/stylesheets/style2.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <img src="https://avisystems.in/wp-content/uploads/2022/10/AVI-Logo-Mobile-new.png" alt="pin logo" class="img1" />
+        <p class="header">Log in to see more</p>
+        <% if(error.length > 0){ %>
+          <p class="error"> <%=  error  %> </p>
+        <% } %>
+        <form action="/login" method="post">
+          <input type="text" name="username" placeholder="Username" class="detail" /><br />
+          <input type="password" name="password" placeholder="Password" class="detail" />
+          <input type="submit" class="btn int" value="Login My Account" >
+
+        </form>
+        
+        <a href="/forgot">Forgot your password?</a>
+
+        <footer>
+          <p>
+            By continuing, you agree to Alexander's
+            <b>Terms of Service, Privacy policy.</b>
+          </p>
+          <hr />
+          <a href="/">
+            <h2>
+              Not on Alexander yet? Sign up
+            </h2>
+          </a>
+        </footer>
+      </div>
+    </div>
+
+  </body>
+</html>
+

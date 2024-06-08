@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>profile demo</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body style="background-color: aquamarine;">
+    <div class="allcontainer">
+      <div class="first">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li> -->
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="second" style="justify-content: center;">
+        <div class="profile-card">
+          <div class="avatar"><img src="data:image/png;base64,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" alt="profile-img"></div>
+          <div>
+              <div  class="name"><%= user.username %></div>
+              <div class="username"><%= user.fullname %></div>
+          </div> 
+          <div >
+              <button type="button" class="btn btn-outline-danger">
+                  <a href="/login">LOG OUT</a>
+              </button>
+          </div>
+          <div>
+              <form action="/upload" method="post" enctype="multipart/form-data">
+                  <input type="text" name="filecaption" placeholder="Write caption">
+                  <input type="file" name="file">
+                  <input type="submit">
+              </form>
+          </div>
+          <div>
+            <!-- <p class="error"> error1</p> -->
+            <p>_________________</p>
+          </div>
+          <br>
+      </div>
+      </div>
+    </div>
+    
+    <div>
+        <div class="cards d-inline-flex p-2 m-3">
+          <% user.posts.forEach(function(post){ %>
+            <div class="card p-1 m-1" style="width: 18rem; height: 10rem">
+              <img src="/images/uploads/<%= post.image %>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"><%= post.postText %></h5>
+              </div>
+            </div>
+          <% }) %>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

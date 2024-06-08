@@ -1,0 +1,123 @@
+
+.body{
+    background-color: #88b896;
+    margin: 1rem;
+    padding: 1rem;
+}
+.profile-card {
+    background-color: #a6d5f1;
+    color: var(--main-txt-color);
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #e1e7fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* position: relative; */
+}
+.main {
+    justify-content: center;
+}
+.error {
+    font-weight: 500;
+    color: red;
+    text-transform: capitalize;
+    margin: 5px 0 ;
+  }
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    outline: 10px solid #285ef1;
+    border-radius: 50%;
+}
+
+.avatar>img {
+    outline: 10px #ecf1ff;
+    border-radius: 50%;
+    width: inherit;
+    aspect-ratio: 2/2;
+    object-fit: cover;
+}
+
+.salutation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.salutation>.name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.salutation>.designation {
+    font-size: 15px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 10px;
+}
+
+.options>button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+    background-color: white;
+    border: 2px solid #e9e6f6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 500ms ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.options>button>.btn-img {
+    width: 30px;
+    aspect-ratio: 1/1;
+}
+
+.more-options {
+    bottom: -60px;
+    right: -120px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: var(--main-txt-color);
+    color: white;
+    border-radius: 5px;
+    gap:5px;
+    transition: all 500ms ease;
+}
+.notVisible{
+    transform: scale(0);
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    height:30px;
+    cursor: pointer;
+    transition: all 500ms ease;
+    border-radius: inherit;
+    padding: 10px;
+    &:hover{
+        background-color: #2d255a;
+    }
+}
